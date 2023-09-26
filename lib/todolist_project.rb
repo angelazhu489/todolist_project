@@ -23,22 +23,22 @@ class Todo
   def done?
     done
   end
-
-  def undone!
+	
+	def undone!
     self.done = false
-  end
-
-  def to_s # replaces original #to_s method
-    result = "[#{done? ? DONE_MARKER : UNDONE_MARKER}] #{title}"
-    result += due_date.stamp(' (Due: Friday January 6)') if due_date
-    result
 	end
-
-  def ==(otherTodo)
+	
+	def to_s # replaces original #to_s method
+		result = "[#{done? ? DONE_MARKER : UNDONE_MARKER}] #{title}"
+		result += due_date.stamp(' (Due: Friday January 6)') if due_date
+		result
+	end
+	
+	def ==(otherTodo)
     title == otherTodo.title &&
-      description == otherTodo.description &&
-      done == otherTodo.done
-  end
+			description == otherTodo.description &&
+			done == otherTodo.done
+	end
 end
 
 # This class represents a collection of Todo objects.

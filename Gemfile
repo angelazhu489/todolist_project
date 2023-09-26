@@ -7,3 +7,4 @@ ruby '3.1.0'	# not required but highly recommended
 gem 'minitest', '~> 5.10'
 gem 'minitest-reporters', '~> 1.1'
 gem 'stamp', '~> 0.6'
+gem 'rake'

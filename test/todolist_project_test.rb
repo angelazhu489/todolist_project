@@ -162,7 +162,7 @@ class TodoListTest < Minitest::Test
 
 	def test_no_due_date
     assert_nil(@todo1.due_date)
-  end
+	end
 
   def test_due_date
     due_date = Date.today + 3
@@ -180,5 +180,5 @@ class TodoListTest < Minitest::Test
     OUTPUT
 
     assert_equal(output, @list.to_s)
-  end
+	end
 end
