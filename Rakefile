@@ -1,5 +1,6 @@
 require "rake/testtask"
 require 'find'
+require 'bundler/gem_tasks'
 
 desc 'Say hello'
 task :hello do
